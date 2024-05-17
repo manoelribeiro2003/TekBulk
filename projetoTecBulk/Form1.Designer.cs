@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.rbFIFO = new System.Windows.Forms.RadioButton();
             this.rbLIFO = new System.Windows.Forms.RadioButton();
             this.rbJIT = new System.Windows.Forms.RadioButton();
@@ -36,15 +36,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarProdutoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarDemandaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarDemandaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verDemandasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvDemandas = new System.Windows.Forms.DataGridView();
             this.rbPrioridades = new System.Windows.Forms.RadioButton();
             this.rbAtrasados = new System.Windows.Forms.RadioButton();
             this.tbxPrioridade = new System.Windows.Forms.TextBox();
-            this.cadastrarDemandaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarProdutoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.verProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarDemandaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.verDemandasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDemandas)).BeginInit();
             this.SuspendLayout();
@@ -126,20 +126,55 @@
             this.cadastrarProdutoToolStripMenuItem.Text = "Produto";
             this.cadastrarProdutoToolStripMenuItem.Click += new System.EventHandler(this.cadastrarProdutoToolStripMenuItem_Click);
             // 
+            // cadastrarProdutoToolStripMenuItem1
+            // 
+            this.cadastrarProdutoToolStripMenuItem1.Name = "cadastrarProdutoToolStripMenuItem1";
+            this.cadastrarProdutoToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.cadastrarProdutoToolStripMenuItem1.Text = "Cadastrar Produto";
+            this.cadastrarProdutoToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarProdutoToolStripMenuItem1_Click);
+            // 
+            // verProdutosToolStripMenuItem
+            // 
+            this.verProdutosToolStripMenuItem.Name = "verProdutosToolStripMenuItem";
+            this.verProdutosToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.verProdutosToolStripMenuItem.Text = "Ver Produtos";
+            this.verProdutosToolStripMenuItem.Click += new System.EventHandler(this.verProdutosToolStripMenuItem_Click);
+            // 
+            // cadastrarDemandaToolStripMenuItem
+            // 
+            this.cadastrarDemandaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarDemandaToolStripMenuItem1,
+            this.verDemandasToolStripMenuItem});
+            this.cadastrarDemandaToolStripMenuItem.Name = "cadastrarDemandaToolStripMenuItem";
+            this.cadastrarDemandaToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.cadastrarDemandaToolStripMenuItem.Text = "Demanda";
+            // 
+            // cadastrarDemandaToolStripMenuItem1
+            // 
+            this.cadastrarDemandaToolStripMenuItem1.Name = "cadastrarDemandaToolStripMenuItem1";
+            this.cadastrarDemandaToolStripMenuItem1.Size = new System.Drawing.Size(178, 22);
+            this.cadastrarDemandaToolStripMenuItem1.Text = "Cadastrar Demanda";
+            // 
+            // verDemandasToolStripMenuItem
+            // 
+            this.verDemandasToolStripMenuItem.Name = "verDemandasToolStripMenuItem";
+            this.verDemandasToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.verDemandasToolStripMenuItem.Text = "Ver Demandas";
+            // 
             // dgvDemandas
             // 
             this.dgvDemandas.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDemandas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDemandas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDemandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDemandas.EnableHeadersVisualStyles = false;
-            this.dgvDemandas.Location = new System.Drawing.Point(55, 145);
+            this.dgvDemandas.Location = new System.Drawing.Point(67, 145);
             this.dgvDemandas.MultiSelect = false;
             this.dgvDemandas.Name = "dgvDemandas";
             this.dgvDemandas.ReadOnly = true;
@@ -181,41 +216,6 @@
             this.tbxPrioridade.Size = new System.Drawing.Size(100, 20);
             this.tbxPrioridade.TabIndex = 118;
             this.tbxPrioridade.TextChanged += new System.EventHandler(this.tbxPrioridade_TextChanged);
-            // 
-            // cadastrarDemandaToolStripMenuItem
-            // 
-            this.cadastrarDemandaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarDemandaToolStripMenuItem1,
-            this.verDemandasToolStripMenuItem});
-            this.cadastrarDemandaToolStripMenuItem.Name = "cadastrarDemandaToolStripMenuItem";
-            this.cadastrarDemandaToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.cadastrarDemandaToolStripMenuItem.Text = "Demanda";
-            // 
-            // cadastrarProdutoToolStripMenuItem1
-            // 
-            this.cadastrarProdutoToolStripMenuItem1.Name = "cadastrarProdutoToolStripMenuItem1";
-            this.cadastrarProdutoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.cadastrarProdutoToolStripMenuItem1.Text = "Cadastrar Produto";
-            this.cadastrarProdutoToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarProdutoToolStripMenuItem1_Click);
-            // 
-            // verProdutosToolStripMenuItem
-            // 
-            this.verProdutosToolStripMenuItem.Name = "verProdutosToolStripMenuItem";
-            this.verProdutosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verProdutosToolStripMenuItem.Text = "Ver Produtos";
-            this.verProdutosToolStripMenuItem.Click += new System.EventHandler(this.verProdutosToolStripMenuItem_Click);
-            // 
-            // cadastrarDemandaToolStripMenuItem1
-            // 
-            this.cadastrarDemandaToolStripMenuItem1.Name = "cadastrarDemandaToolStripMenuItem1";
-            this.cadastrarDemandaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.cadastrarDemandaToolStripMenuItem1.Text = "Cadastrar Demanda";
-            // 
-            // verDemandasToolStripMenuItem
-            // 
-            this.verDemandasToolStripMenuItem.Name = "verDemandasToolStripMenuItem";
-            this.verDemandasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verDemandasToolStripMenuItem.Text = "Ver Demandas";
             // 
             // Form1
             // 
